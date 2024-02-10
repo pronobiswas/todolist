@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} 
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.progressBar{
+    width: 100%;
+    height: 4px;
+    background-color: aqua;
+}
+.progress{
+    width: 50%;
+    height: 100%;
+    background-color: aquamarine;
+}
+/* =======navWarpper========== */
+.navWarpper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navWarpper .logo{
+    width: 150px;
+    height: 100%;
+}
+.navWarpper .menu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.navWarpper .menu ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* column-gap: 4%; */
+    list-style-type: none;
+}
+.navWarpper .menu ul a{
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: transparent;
+    transition: all .3s linear;
+}
+.navWarpper .menu ul a:hover{
+    background-color: #dedede;
+    border-radius: 3px;
+}
+.navWarpper .menu .logIn{
+    width: 310px;
+    border-left: 1px solid gray;
+    margin-left: 20px;
+}
+.navWarpper .menu .logIn a{
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: transparent;
+    transition: all .3s linear;
+}
+.navWarpper .menu .logIn a:last-child{
+    background-color: #ea5527;
+    border-radius: 8px;
+    color: white;
+}
+
+/* ======*********end of header******========= */
+
+/* ====&&&&&&&sectionOne&&&&&&====== */
+#sectionOne{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+}
+#sectionOne .partOne{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+#sectionOne .paarTwo{
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(#fae8d6 ,#fff9f3,#ffffff);
+}
+
+.partMain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+.partMainWarpper{
+   width: 100%;
+   background-color: transparent;
+   display: flex;
+   justify-content: space-between;
+}
+.partMAinContent{
+    width: 400px;
+    /* background-color: rgba(255, 210, 210, 0.146); */
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.partMAinContent h3{
+    margin-bottom: 20px;
+}
+.contentItem{
+    width: 100%;
+    height: 60px;
+    padding: 6.5px 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 10px;
+}
+.contentItem .profiling{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contentItem .profiling img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.profilingTxt{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.partMAinImg{
+    width: 450px;
+    /* background-color: aqua; */
+    position: relative;
+}
+.partMAinImg img{
+    width: 130%;
+    height: 130%;
+    object-fit: cover;
+    position: absolute;
+    right: -110px;
+}
+label{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+}
+#Fname{
+    font-size: 16px;
+    padding: 2px 0;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.todoistTxt{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todoistTogle{
+    width: 35px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+.togleball{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+.togleLeft{
+    transform: translateX(18px);
+}
+.continueBtnBox{
+    padding: 0;
+    overflow: hidden;
+    border: transparent;
+}
+.continueBtn{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #ea5527;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+/* ====&&&&&&&sectionOne&&&&&&====== */
+
+
+/* =++++&&&&====******=== section two ===******====&&&&++++= */
+#sectionTwo{
+    width: 100%;
+    height: 600px;
+    background-color: whitesmoke;
+    position: relative;
+    display: flex;
+}
+.partitionOne{
+    width: 50%;
+    height: 100%;
+    background-color: #fae8d6;
+}
+.partitionTwo{
+    width: 50%;
+    height: 100%;
+    background-color: #fad0a5;
+}
+.stepTwo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4ffdf82;
+    padding: 80px 0;
+}
+.stepTwoWarpper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.stepTwoContent{
+    width: 400px;
+}
+.contentHeader{
+    text-align: center;
+}
+.contentHeader p{
+    margin: 20px 0;
+}
+.stepTwoContent ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.stepTwoContent ul li{
+    width: 70%;
+    margin: auto;
+    padding: 10px 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .2s linear;
+}
+.lefts i{
+    color: #e73600;
+    margin-right: 10px;
+}
+.lefts span{
+    color: #242424;
+    font-weight: 600;
+}
+.stepTwoContent ul li .circle{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+.stepTwoContent ul li .circle i{
+    font-size: 12px;
+    color: rgb(255, 36, 36);
+    opacity: 0;
+    transition: all .5s linear;
+}
+.stepTwoContent ul li:hover{
+    border: 1px solid #969696;
+}
+.stepTwoContent ul li:hover .circle{
+    background-color: #fa5e5e36;
+}
+.stepTwoContent ul li:hover .circle i{
+    opacity: 1;
+}
+
+
+
+.steptwoImage{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.steptwoImageBox{
+    width: 400px;
+    height: 200px;
+}
+.steptwoImageBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* =++++&&&&====******=== section two ===******====&&&&++++= */
