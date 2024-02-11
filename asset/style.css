@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 } 
+
 .container{
     width: 100%;
     max-width: 1200px;
@@ -13,10 +14,14 @@
 .progressBar{
     width: 100%;
     height: 4px;
-    background-color: aqua;
+    background-color: #016060;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
 .progress{
-    width: 50%;
+    width: 5%;
     height: 100%;
     background-color: aquamarine;
 }
@@ -25,6 +30,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 .navWarpper .logo{
     width: 150px;
@@ -82,7 +91,7 @@
 /* ====&&&&&&&sectionOne&&&&&&====== */
 #sectionOne{
     width: 100%;
-    height: 600px;
+    height: 700px;
     position: relative;
     display: flex;
 }
@@ -104,6 +113,7 @@
     background-color: transparent;
     width: 100%;
     height: 100%;
+    padding: 5% 0;
 }
 .partMainWarpper{
    width: 100%;
@@ -208,6 +218,7 @@ label{
     color: white;
     letter-spacing: 2px;
     font-weight: 600;
+    cursor: pointer;
 }
 /* ====&&&&&&&sectionOne&&&&&&====== */
 
@@ -306,6 +317,7 @@ label{
     opacity: 1;
 }
 
+/* =====step two image box===== */
 
 
 .steptwoImage{
@@ -324,3 +336,40 @@ label{
     object-fit: cover;
 }
 /* =++++&&&&====******=== section two ===******====&&&&++++= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========script classs to be added======== */
+.red{
+    background-color: #e73600;
+    color: white;
+}
+.checkedUp{
+    background-color: #e73600;
+    animation-name: myChanges;
+    animation-duration: .2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    
+}
+@keyframes myChanges {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+  }
