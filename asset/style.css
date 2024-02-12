@@ -316,7 +316,19 @@ label{
 .stepTwoContent ul li:hover .circle i{
     opacity: 1;
 }
+#secondBtn{
+    width: 70%;
+    margin: auto;
+    padding: 8px 0;
+    background-color: #ea5527;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
 
+}
 /* =====step two image box===== */
 
 
@@ -339,7 +351,35 @@ label{
 
 
 
-
+/* ========***********counter cection**********========== */
+#counters{
+    width: 100%;
+    padding: 60px 0;
+}
+.counterWarpper{
+    width: 100%;
+    padding: 15px 0;
+    background-color: #016060;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.counterbox{
+    width: 200px;
+    height: 150px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.countResult{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 800;
+    -webkit-text-stroke:1px  #e73600;
+    text-align: center;
+}
+/* ========***********counter cection**********========== */
 
 
 

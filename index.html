@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./asset/style.css">
 </head>
 <body>
+    
     <header>
         <div class="progressBar">
             <div class="progress"></div>
@@ -134,7 +135,7 @@
                                 </div>
                             </li>
                             
-                            <button id="secondBtn">submit</button>
+                            <button id="secondBtn">Submit</button>
                         
                             
                             
@@ -153,6 +154,54 @@
         </div>
     </section>
 
+    <!-- =============counter section=========== -->
+    <section id="counters">
+        <div class="container">
+            <div class="counterWarpper" id="theCounter">
+                <div class="counterbox">
+                    <h1 class="countResult" data-count="100" data-speed="30"></h1>
+                </div>
+                <div class="counterbox">
+                    <h1 class="countResult" data-count="300" data-speed="100"></h1>
+                </div>
+                <div class="counterbox">
+                    <h1 class="countResult" data-count="400" data-speed="150"></h1>
+                </div>
+                <div class="counterbox">
+                    <h1 class="countResult" data-count="40" data-speed="8"></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="myCounter">
+        <button onclick="startCount()">Start count!</button>
+        <input type="text" id="demo" title="hi">
+        <button onclick="stopCount()">Stop count!</button>
+    </div> -->
+    <!-- <script>
+        let counter = 0;
+        let timeout;
+        let timer_on = 0;
+        
+        function timedCount() {
+          document.getElementById("demo").value = counter;
+          counter++;
+          timeout = setTimeout(timedCount, 1000);
+        }
+        
+        function startCount() {
+          if (!timer_on) {
+            timer_on = 1;
+            timedCount();
+          }
+        }
+        
+        function stopCount() {
+          clearTimeout(timeout);
+          timer_on = 0;
+        }
+        </script> -->
 
 
     <!-- =========script===== -->

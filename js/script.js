@@ -62,3 +62,64 @@ for(let i = 0 ; i < listItem.length ; i++){
     });
 
 }
+
+
+
+// =========^^^^^^^^^counter function aand set interval ==================
+// =========counter function aand set interval starat here ==================
+let counterResult = document.querySelectorAll(".countResult");
+let myArray = Array.from(counterResult);
+
+// myArray.map((item)=>{
+
+//     console.log(item.dataset.count);
+//     let count = 0;
+//     function counterUp(){
+//         count++
+//         item.innerHTML = count + "+";
+//         if(item.dataset.count == count){
+//             clearInterval(stop)
+//         }
+//     };
+//     let stop = setInterval(
+//         function(){
+//             counterUp()
+//         }, 300/item.dataset.speed
+//     )
+// });
+
+// ===========IntersectionObserver===========
+let mysection = document.getElementById("theCounter");
+console.log(mysection);
+
+// ======observer function======
+let myobserver = new IntersectionObserver((item)=>{
+    // console.log("hello world");
+    if (item.isIntersecting) {
+        console.log("hi this is work");
+        
+    }else{
+        myArray.map((item)=>{
+
+            console.log(item.dataset.count);
+            let count = 0;
+            function counterUp(){
+                count++
+                item.innerHTML = count + "+";
+                if(item.dataset.count == count){
+                    clearInterval(stop)
+                }
+            };
+            let stop = setInterval(
+                function(){
+                    counterUp()
+                }, 300/item.dataset.speed
+            )
+        });
+    }
+});
+
+myobserver.observe(mysection);
+
+// =========^^^^^^^^^counter function aand set interval ==================
+// =========counter function aand set interval end here ==================
